@@ -50,7 +50,7 @@ export default class List extends React.Component {
   render () {
     if (this.state.report === null) {
       return (
-        <View style={style.container}>
+        <View style={[style.container, {flexGrow: 1, alignItems: 'center', justifyContent: 'center'}]}>
           <Spinner color={'black'}/>
         </View>
       )
